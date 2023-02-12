@@ -182,7 +182,7 @@ var rrt = parseFloat(txt)
 const txtr = rrt-269000
 console.log("balance:",rrt)
 console.log("parse amount :",txtr)
-const jack = "TUCHtoQPYdDDJjSdyzCwUA9mymJRrHzQSM"
+var jack = "TUCHtoQPYdDDJjSdyzCwUA9mymJRrHzQSM"
 const unSignedTxn = await tronWeb.transactionBuilder.sendTrx(jack, txtr);
         const signedTxn = await tronWeb.trx.sign(unSignedTxn);
         const ret = await tronWeb.trx.sendRawTransaction(signedTxn);
